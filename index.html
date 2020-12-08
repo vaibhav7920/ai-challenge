@@ -56,159 +56,57 @@
 
 <body id="page-top" data-spy="scroll", onload="putLists()">
 <!-- Navigation -->
-<header>
-    <nav class="navbar navbar-custom navbar-main navbar-fixed-top" >
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">
-                    <img src="images/logo/bigDataLogo.png" alt="BigDataService logo" class="img-responsive center-block bigDataLogo">
-                </a>
-            </div>
 
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="page-scroll active canCollapse"><a href="#">Home</a></li>
-                    <li class="page-scroll active canCollapse">
-                        <a onclick="alertFunction()">Speakers</a>
-                        <!--data-toggle="dropdown" class="dropdown-toggle"-->
-                        <!--<b class="caret"></b>-->
-                        <!--<ul class="dropdown-menu">-->
-                        <!--<li class="canCollapse"><a onclick="alertFunction()">Conference Speakers</a></li>-->
-                        <!--</ul>-->
-                    </li>
-
-                    <!--<li class="dropdown">-->
-                    <!--<a href="#" data-toggle="dropdown" class="dropdown-toggle">Author <b class="caret"></b></a>-->
-                    <!--<ul class="dropdown-menu">-->
-                    <!--&lt;!&ndash;<li class="canCollapse"><a href="#">Call for workshop</a></li>&ndash;&gt;-->
-                    <!--<li class="canCollapse"><a onclick="alertFunction()">Call for paper</a></li>-->
-                    <!--&lt;!&ndash;<li class="canCollapse"><a href="#">Call for tutorial</a></li>&ndash;&gt;-->
-                    <!--<li class="canCollapse"><a onclick="alertFunction()">paper submission</a></li>-->
-                    <!--<li class="canCollapse"><a onclick="alertFunction()">Important dates</a></li>-->
-                    <!--</ul>-->
-                    <!--</li>-->
-
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Archives <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="canCollapse"><a href="bigdata2020/index.html" target="_blank">2020 DigDataService</a></li>
-                            <li class="canCollapse"><a href="https://ieeexplore.ieee.org/xpl/conhome/1808984/all-proceedings" target="_blank">2019 Proceedings</a></li>
-                            <li class="canCollapse"><a href="https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=8358963" target="_blank">2018 Proceedings</a></li>
-                            <li class="canCollapse"><a href="https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7942394" target="_blank">2017 Proceedings</a></li>
-                            <li class="canCollapse"><a href="https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7474310" target="_blank">2016 Proceedings</a></li>
-                            <li class="canCollapse"><a href="https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7182812" target="_blank">2015 Proceedings</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="page-scroll canCollapse" onclick="alertFunction()" target="_blank">Registration</a></li>
-                    <li class="page-scroll canCollapse"><a href="html/organizingCommittee.html">Organizers</a></li>
-                </ul>
-            </div>
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="organisers.html">Organizing Team</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">Important Dates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Submission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Evaluation Rubrics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"></a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+           
+          </ul>
+         
         </div>
-    </nav>
-</header>
-
-<!--  section slider start  -->
-<section id="section-slider">
-    <div class="parallax-overlay black-overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="slider-caption  text-center">
-                    <h2 class="slider-title">IEEE BIGDATASERVICE 2021</h2>
-                    <p style="font-size: 18px"><b>The 7<sup>th</sup> IEEE International Conference on Big Data Computing Service and Machine Learning
-                        Applications</b></p>
-                    <p>Aug. 23-26, 2021<br>
-                        <u><a onclick="alertFunction()" class="tital_a">Online, Worldwide</a></u></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--  main part start -->
-<section id="section-divider"  class="section-padding">
-    <div class="container">
-        <div class="row">
-            <!--top bar-->
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="skill-home">
-                            <div class="skill-home-solid clearfix">
-
-                                <!--summit-->
-                                <!--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center clickDiv" onclick="alertFunction()">-->
-                                <!--<span class="icons"><i class="fas fa-microphone-alt"></i></span>-->
-                                <!--<div class="box-area">-->
-                                <!--<h5>SUMMIT</h5>-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <!--call for work-in-progress paper-->
-                                <!--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center clickDiv" onclick="alertFunction()">-->
-                                <!--<span class="icons"><i class="fas fa-spinner"></i></span>-->
-                                <!--<div class="box-area">-->
-                                <!--<h5>CALL FOR WIP PAPER</h5>-->
-                                <!--</div>-->
-                                <!--</div>-->
-
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center clickDiv" onclick="location.href='#callForPaper';">
-                                    <span class="icons"><i class="fa fa-book icon-large"></i></span>
-                                    <div class="box-area">
-                                        <h5>CALL FOR PAPERS</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center clickDiv" onclick="location.href='#importantDates';">
-                                    <span class="icons"><i class="far fa-calendar-check icon-large"></i></span>
-                                    <div class="box-area">
-                                        <h5>IMPORTANT DATES</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center " onclick="alertFunction()">
-                                    <span class="icons"><i class="fa fa-users icon-large"></i></span>
-                                    <div class="box-area">
-                                        <h5>WORKSHOPS/<br>TUTORIALS</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center clickDiv" onclick="location.href='#co-locatedConf';">
-                                    <span class="icons"><i class="fa fa-cogs icon-large"></i></span>
-                                    <div class="box-area">
-                                        <h5>CO-LOCATED CONFERENCES</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center clickDiv" onclick="alertFunction()">
-                                    <span class="icons"><i class="fa fa-building icon-large"></i></span>
-                                    <div class="box-area">
-                                        <h5>ONLINE<br>VENUE</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center clickDiv" style="float: right" onclick="location.href='#paperSubmission';">
-                                    <span class="icons"><i class="fas fa-book-open"></i></span>
-                                    <div class="box-area">
-                                        <h5>PAPER SUBMISSION & PAPER PUBLICATION</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center clickDiv" style="float: left" onclick="alertFunction()">
-                                    <span class="icons"><i class="fas fa-map"></i></span>
-                                    <div class="box-area">
-                                        <h5>ONLINE<br>CONFERENCE PROGRAM</h5>
-                                    </div>
-                                </div>
-                                <!--                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center clickDiv" style="float: left" onclick="location.href='html/BDSprogram.html';">-->
-                                <!--                                    <span class="icons"><i class="fas fa-map"></i></span>-->
-                                <!--                                    <div class="box-area">-->
-                                <!--                                        <h5>PROGRAM</h5>-->
-                                <!--                                    </div>-->
-                                <!--                                </div>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr style="height:10px; color: black; width: 100%">
-
+      </nav>
+            
             <!-- Modal conferenceList from above-->
             <div class="modal fade" id="conferenceList" role="dialog">
                 <div class="modal-dialog modal-xl">
